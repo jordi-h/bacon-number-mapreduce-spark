@@ -1,2 +1,3 @@
 *.tsv
 !title.principals.millions.tsv
+!smallest.tsv

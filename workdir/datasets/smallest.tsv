@@ -1,0 +1,21 @@
+tconst	ordering	nconst	category	job	characters
+tt0000001	1	nm0000102	actor		Kevin Bacon Level 0
+tt0000001	2	nm0000001	actor		Actor 1 Level 1
+tt0000001	3	nm0000002	actor		Actor 2 Level 1
+tt0000001	4	nm0000003	actor		Actor 3 Level 1
+tt0000002	1	nm0000001	actor		Actor 1 Level 1
+tt0000002	2	nm0000004	actor		Actor 1 Level 2
+tt0000002	3	nm0000005	actor		Actor 2 Level 2
+tt0000002	4	nm0000006	actor		Actor 3 Level 2
+tt0000003	1	nm0000004	actor		Actor 2 Level 2
+tt0000003	2	nm0000007	actor		Actor 1 Level 3
+tt0000003	3	nm0000008	actor		Actor 2 Level 3
+tt0000003	4	nm0000009	actor		Actor 3 Level 3
+tt0000004	1	nm0000007	actor		Actor 3 Level 3
+tt0000004	2	nm0000010	actor		Actor 1 Level 4
+tt0000004	3	nm0000011	actor		Actor 2 Level 4
+tt0000004	4	nm0000012	actor		Actor 3 Level 4
+tt0000005	1	nm0000010	actor		Actor 1 Level 4
+tt0000005	2	nm0000013	actor		Actor 1 Level 5
+tt0000005	3	nm0000014	actor		Actor 2 Level 5
+tt0000005	4	nm0000015	actor		Actor 3 Level 5
