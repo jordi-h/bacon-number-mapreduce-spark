@@ -90,6 +90,9 @@ class SingleSourceShortestPath(MRJob):
     def mapper4(self, key, values):
         yield key, values[0]
 
+    def reducer4(self, key, values):
+        yield key, list(values)
+
 
     def steps(self):
         steps = []
@@ -103,7 +106,7 @@ class SingleSourceShortestPath(MRJob):
             steps.append(MRStep(mapper=self.mapper3, reducer=self.reducer3))
 
         # Postprocessing
-        steps.append(MRStep(mapper=self.mapper4))
+        steps.append(MRStep(mapper=self.mapper4, reducer=self.reducer4))
 
         return steps
 
