@@ -1,0 +1,1145 @@
+./mapreduce-bacon-script.sh -s nm0000102 -d 6
+Running job...
+Successfully copied 6.14kB to namenode:/tmp/hadoop-scripts/parallel_bfs_mapreduce.py
+No configs found; falling back on auto-configuration
+No configs specified for hadoop runner
+Looking for hadoop binary in /opt/hadoop-3.2.1/bin...
+Found hadoop binary: /opt/hadoop-3.2.1/bin/hadoop
+Using Hadoop version 3.2.1
+Looking for Hadoop streaming jar in /opt/hadoop-3.2.1...
+Found Hadoop streaming jar: /opt/hadoop-3.2.1/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar
+Creating temp directory /tmp/parallel_bfs_mapreduce.root.20240506.150409.926906
+uploading working dir files to hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/files/wd...
+Copying other local files to hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/files/
+Running step 1 of 9...
+  packageJobJar: [/tmp/hadoop-unjar3495500683664620875/] [] /tmp/streamjob6524410338533303691.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0001
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:2
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0001
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0001
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0001/
+  Running job: job_1715007770813_0001
+  Job job_1715007770813_0001 running in uber mode : false
+   map 0% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 100%
+  Job job_1715007770813_0001 completed successfully
+  Output directory: hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/step-output/0000
+Counters: 55
+        File Input Format Counters
+                Bytes Read=90150327
+        File Output Format Counters
+                Bytes Written=27848778
+        File System Counters
+                FILE: Number of bytes read=9852535
+                FILE: Number of bytes written=20406820
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=90150551
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=27848778
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=11
+                HDFS: Number of write operations=2
+        Job Counters
+                Killed map tasks=1
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Rack-local map tasks=2
+                Total megabyte-milliseconds taken by all map tasks=66859008
+                Total megabyte-milliseconds taken by all reduce tasks=91168768
+                Total time spent by all map tasks (ms)=16323
+                Total time spent by all maps in occupied slots (ms)=65292
+                Total time spent by all reduce tasks (ms)=11129
+                Total time spent by all reduces in occupied slots (ms)=89032
+                Total vcore-milliseconds taken by all map tasks=16323
+                Total vcore-milliseconds taken by all reduce tasks=11129
+        Map-Reduce Framework
+                CPU time spent (ms)=11050
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=111
+                Input split bytes=224
+                Map input records=2000000
+                Map output bytes=48010320
+                Map output materialized bytes=9852610
+                Map output records=1999999
+                Merged Map outputs=2
+                Peak Map Physical memory (bytes)=370872320
+                Peak Map Virtual memory (bytes)=5140905984
+                Peak Reduce Physical memory (bytes)=276058112
+                Peak Reduce Virtual memory (bytes)=8488538112
+                Physical memory (bytes) snapshot=1016451072
+                Reduce input groups=141419
+                Reduce input records=1999999
+                Reduce output records=141419
+                Reduce shuffle bytes=9852610
+                Shuffled Maps =2
+                Spilled Records=3999998
+                Total committed heap usage (bytes)=954728448
+                Virtual memory (bytes) snapshot=18767683584
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Running step 2 of 9...
+  packageJobJar: [/tmp/hadoop-unjar5571434906599090457/] [] /tmp/streamjob978881733657646917.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0002
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:2
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0002
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0002
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0002/
+  Running job: job_1715007770813_0002
+  Job job_1715007770813_0002 running in uber mode : false
+   map 0% reduce 0%
+   map 11% reduce 0%
+   map 15% reduce 0%
+   map 19% reduce 0%
+   map 22% reduce 0%
+   map 25% reduce 0%
+   map 28% reduce 0%
+   map 29% reduce 0%
+   map 31% reduce 0%
+   map 33% reduce 0%
+   map 34% reduce 0%
+   map 36% reduce 0%
+   map 38% reduce 0%
+   map 39% reduce 0%
+   map 40% reduce 0%
+   map 43% reduce 0%
+   map 46% reduce 0%
+   map 49% reduce 0%
+   map 51% reduce 0%
+   map 54% reduce 0%
+   map 56% reduce 0%
+   map 60% reduce 0%
+   map 64% reduce 0%
+   map 80% reduce 0%
+   map 83% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 46%
+   map 100% reduce 56%
+   map 100% reduce 63%
+   map 100% reduce 67%
+   map 100% reduce 69%
+   map 100% reduce 71%
+   map 100% reduce 73%
+   map 100% reduce 75%
+   map 100% reduce 76%
+   map 100% reduce 77%
+   map 100% reduce 79%
+   map 100% reduce 81%
+   map 100% reduce 83%
+   map 100% reduce 85%
+   map 100% reduce 87%
+   map 100% reduce 89%
+   map 100% reduce 91%
+   map 100% reduce 93%
+   map 100% reduce 95%
+   map 100% reduce 97%
+   map 100% reduce 99%
+   map 100% reduce 100%
+  Job job_1715007770813_0002 completed successfully
+  Output directory: hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/step-output/0001
+Counters: 54
+        File Input Format Counters
+                Bytes Read=27852874
+        File Output Format Counters
+                Bytes Written=412768309
+        File System Counters
+                FILE: Number of bytes read=260903233
+                FILE: Number of bytes written=390061123
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=27853216
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=412768309
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=11
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=2
+                Launched reduce tasks=1
+                Rack-local map tasks=2
+                Total megabyte-milliseconds taken by all map tasks=820690944
+                Total megabyte-milliseconds taken by all reduce tasks=1125834752
+                Total time spent by all map tasks (ms)=200364
+                Total time spent by all maps in occupied slots (ms)=801456
+                Total time spent by all reduce tasks (ms)=137431
+                Total time spent by all reduces in occupied slots (ms)=1099448
+                Total vcore-milliseconds taken by all map tasks=200364
+                Total vcore-milliseconds taken by all reduce tasks=137431
+        Map-Reduce Framework
+                CPU time spent (ms)=393530
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=201
+                Input split bytes=342
+                Map input records=141419
+                Map output bytes=745688552
+                Map output materialized bytes=128456074
+                Map output records=31058230
+                Merged Map outputs=2
+                Peak Map Physical memory (bytes)=393179136
+                Peak Map Virtual memory (bytes)=5210574848
+                Peak Reduce Physical memory (bytes)=1157873664
+                Peak Reduce Virtual memory (bytes)=8557568000
+                Physical memory (bytes) snapshot=1893146624
+                Reduce input groups=402579
+                Reduce input records=31058230
+                Reduce output records=402579
+                Reduce shuffle bytes=128456074
+                Shuffled Maps =2
+                Spilled Records=93174690
+                Total committed heap usage (bytes)=1809317888
+                Virtual memory (bytes) snapshot=18779529216
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Running step 3 of 9...
+  packageJobJar: [/tmp/hadoop-unjar3760441654592908834/] [] /tmp/streamjob4870138978187159402.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0003
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  Adding a new node: /default-rack/172.18.0.4:9866
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:3
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0003
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0003
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0003/
+  Running job: job_1715007770813_0003
+  Job job_1715007770813_0003 running in uber mode : false
+   map 0% reduce 0%
+   map 9% reduce 0%
+   map 14% reduce 0%
+   map 18% reduce 0%
+   map 20% reduce 0%
+   map 24% reduce 0%
+   map 26% reduce 0%
+   map 28% reduce 0%
+   map 31% reduce 0%
+   map 33% reduce 0%
+   map 35% reduce 0%
+   map 37% reduce 0%
+   map 39% reduce 0%
+   map 41% reduce 0%
+   map 44% reduce 0%
+   map 46% reduce 0%
+   map 48% reduce 0%
+   map 50% reduce 0%
+   map 52% reduce 0%
+   map 55% reduce 0%
+   map 57% reduce 0%
+   map 59% reduce 0%
+   map 61% reduce 0%
+   map 63% reduce 0%
+   map 65% reduce 0%
+   map 67% reduce 0%
+   map 78% reduce 0%
+   map 89% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 50%
+   map 100% reduce 60%
+   map 100% reduce 67%
+   map 100% reduce 69%
+   map 100% reduce 71%
+   map 100% reduce 73%
+   map 100% reduce 75%
+   map 100% reduce 77%
+   map 100% reduce 79%
+   map 100% reduce 80%
+   map 100% reduce 82%
+   map 100% reduce 84%
+   map 100% reduce 86%
+   map 100% reduce 88%
+   map 100% reduce 90%
+   map 100% reduce 92%
+   map 100% reduce 94%
+   map 100% reduce 96%
+   map 100% reduce 98%
+   map 100% reduce 99%
+   map 100% reduce 100%
+  Job job_1715007770813_0003 completed successfully
+  Output directory: hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/step-output/0002
+Counters: 54
+        File Input Format Counters
+                Bytes Read=412780597
+        File Output Format Counters
+                Bytes Written=412765681
+        File System Counters
+                FILE: Number of bytes read=251878607
+                FILE: Number of bytes written=373728495
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=412781110
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=412765681
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=14
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=3
+                Launched reduce tasks=1
+                Rack-local map tasks=3
+                Total megabyte-milliseconds taken by all map tasks=918999040
+                Total megabyte-milliseconds taken by all reduce tasks=1067712512
+                Total time spent by all map tasks (ms)=224365
+                Total time spent by all maps in occupied slots (ms)=897460
+                Total time spent by all reduce tasks (ms)=130336
+                Total time spent by all reduces in occupied slots (ms)=1042688
+                Total vcore-milliseconds taken by all map tasks=224365
+                Total vcore-milliseconds taken by all reduce tasks=130336
+        Map-Reduce Framework
+                CPU time spent (ms)=416220
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=141
+                Input split bytes=513
+                Map input records=402579
+                Map output bytes=976176629
+                Map output materialized bytes=120914111
+                Map output records=31863388
+                Merged Map outputs=3
+                Peak Map Physical memory (bytes)=395497472
+                Peak Map Virtual memory (bytes)=5206593536
+                Peak Reduce Physical memory (bytes)=1412005888
+                Peak Reduce Virtual memory (bytes)=8556670976
+                Physical memory (bytes) snapshot=2510438400
+                Reduce input groups=402579
+                Reduce input records=31863388
+                Reduce output records=402579
+                Reduce shuffle bytes=120914111
+                Shuffled Maps =3
+                Spilled Records=95590164
+                Total committed heap usage (bytes)=2414870528
+                Virtual memory (bytes) snapshot=23908040704
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Running step 4 of 9...
+  packageJobJar: [/tmp/hadoop-unjar6198502027900926786/] [] /tmp/streamjob6574192271156113851.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0004
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  Adding a new node: /default-rack/172.18.0.4:9866
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:3
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0004
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0004
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0004/
+  Running job: job_1715007770813_0004
+  Job job_1715007770813_0004 running in uber mode : false
+   map 0% reduce 0%
+   map 5% reduce 0%
+   map 9% reduce 0%
+   map 14% reduce 0%
+   map 16% reduce 0%
+   map 18% reduce 0%
+   map 20% reduce 0%
+   map 22% reduce 0%
+   map 24% reduce 0%
+   map 26% reduce 0%
+   map 28% reduce 0%
+   map 31% reduce 0%
+   map 33% reduce 0%
+   map 35% reduce 0%
+   map 37% reduce 0%
+   map 39% reduce 0%
+   map 41% reduce 0%
+   map 44% reduce 0%
+   map 46% reduce 0%
+   map 48% reduce 0%
+   map 50% reduce 0%
+   map 52% reduce 0%
+   map 54% reduce 0%
+   map 57% reduce 0%
+   map 59% reduce 0%
+   map 61% reduce 0%
+   map 63% reduce 0%
+   map 65% reduce 0%
+   map 68% reduce 0%
+   map 79% reduce 0%
+   map 90% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 50%
+   map 100% reduce 60%
+   map 100% reduce 67%
+   map 100% reduce 69%
+   map 100% reduce 71%
+   map 100% reduce 73%
+   map 100% reduce 75%
+   map 100% reduce 77%
+   map 100% reduce 79%
+   map 100% reduce 81%
+   map 100% reduce 83%
+   map 100% reduce 85%
+   map 100% reduce 86%
+   map 100% reduce 88%
+   map 100% reduce 90%
+   map 100% reduce 92%
+   map 100% reduce 94%
+   map 100% reduce 96%
+   map 100% reduce 98%
+   map 100% reduce 100%
+  Job job_1715007770813_0004 completed successfully
+  Output directory: hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/step-output/0003
+Counters: 54
+        File Input Format Counters
+                Bytes Read=412777969
+        File Output Format Counters
+                Bytes Written=412570297
+        File System Counters
+                FILE: Number of bytes read=253741976
+                FILE: Number of bytes written=376516704
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=412778482
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=412570297
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=14
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=3
+                Launched reduce tasks=1
+                Rack-local map tasks=3
+                Total megabyte-milliseconds taken by all map tasks=909479936
+                Total megabyte-milliseconds taken by all reduce tasks=1059733504
+                Total time spent by all map tasks (ms)=222041
+                Total time spent by all maps in occupied slots (ms)=888164
+                Total time spent by all reduce tasks (ms)=129362
+                Total time spent by all reduces in occupied slots (ms)=1034896
+                Total vcore-milliseconds taken by all map tasks=222041
+                Total vcore-milliseconds taken by all reduce tasks=129362
+        Map-Reduce Framework
+                CPU time spent (ms)=409990
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=143
+                Input split bytes=513
+                Map input records=402579
+                Map output bytes=975192933
+                Map output materialized bytes=121838951
+                Map output records=31863388
+                Merged Map outputs=3
+                Peak Map Physical memory (bytes)=396345344
+                Peak Map Virtual memory (bytes)=5209600000
+                Peak Reduce Physical memory (bytes)=1427685376
+                Peak Reduce Virtual memory (bytes)=8557096960
+                Physical memory (bytes) snapshot=2523934720
+                Reduce input groups=402579
+                Reduce input records=31863388
+                Reduce output records=402579
+                Reduce shuffle bytes=121838951
+                Shuffled Maps =3
+                Spilled Records=95590164
+                Total committed heap usage (bytes)=2335178752
+                Virtual memory (bytes) snapshot=23911960576
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Running step 5 of 9...
+  packageJobJar: [/tmp/hadoop-unjar4399709066095785808/] [] /tmp/streamjob2733612680872908409.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0005
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  Adding a new node: /default-rack/172.18.0.4:9866
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:3
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0005
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0005
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0005/
+  Running job: job_1715007770813_0005
+  Job job_1715007770813_0005 running in uber mode : false
+   map 0% reduce 0%
+   map 4% reduce 0%
+   map 9% reduce 0%
+   map 14% reduce 0%
+   map 15% reduce 0%
+   map 17% reduce 0%
+   map 19% reduce 0%
+   map 21% reduce 0%
+   map 24% reduce 0%
+   map 26% reduce 0%
+   map 28% reduce 0%
+   map 30% reduce 0%
+   map 32% reduce 0%
+   map 34% reduce 0%
+   map 36% reduce 0%
+   map 38% reduce 0%
+   map 40% reduce 0%
+   map 43% reduce 0%
+   map 45% reduce 0%
+   map 47% reduce 0%
+   map 49% reduce 0%
+   map 51% reduce 0%
+   map 53% reduce 0%
+   map 55% reduce 0%
+   map 58% reduce 0%
+   map 59% reduce 0%
+   map 61% reduce 0%
+   map 63% reduce 0%
+   map 65% reduce 0%
+   map 76% reduce 0%
+   map 89% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 47%
+   map 100% reduce 56%
+   map 100% reduce 65%
+   map 100% reduce 68%
+   map 100% reduce 70%
+   map 100% reduce 72%
+   map 100% reduce 74%
+   map 100% reduce 76%
+   map 100% reduce 78%
+   map 100% reduce 80%
+   map 100% reduce 82%
+   map 100% reduce 84%
+   map 100% reduce 85%
+   map 100% reduce 87%
+   map 100% reduce 89%
+   map 100% reduce 91%
+   map 100% reduce 93%
+   map 100% reduce 95%
+   map 100% reduce 97%
+   map 100% reduce 99%
+   map 100% reduce 100%
+  Job job_1715007770813_0005 completed successfully
+  Output directory: hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/step-output/0004
+Counters: 54
+        File Input Format Counters
+                Bytes Read=412578489
+        File Output Format Counters
+                Bytes Written=411569661
+        File System Counters
+                FILE: Number of bytes read=273093016
+                FILE: Number of bytes written=405012041
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=412579002
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=411569661
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=14
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=3
+                Launched reduce tasks=1
+                Rack-local map tasks=3
+                Total megabyte-milliseconds taken by all map tasks=938938368
+                Total megabyte-milliseconds taken by all reduce tasks=1076314112
+                Total time spent by all map tasks (ms)=229233
+                Total time spent by all maps in occupied slots (ms)=916932
+                Total time spent by all reduce tasks (ms)=131386
+                Total time spent by all reduces in occupied slots (ms)=1051088
+                Total vcore-milliseconds taken by all map tasks=229233
+                Total vcore-milliseconds taken by all reduce tasks=131386
+        Map-Reduce Framework
+                CPU time spent (ms)=421090
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=147
+                Input split bytes=513
+                Map input records=402579
+                Map output bytes=935044821
+                Map output materialized bytes=130983248
+                Map output records=31863388
+                Merged Map outputs=3
+                Peak Map Physical memory (bytes)=395980800
+                Peak Map Virtual memory (bytes)=5207855104
+                Peak Reduce Physical memory (bytes)=1372884992
+                Peak Reduce Virtual memory (bytes)=8565985280
+                Physical memory (bytes) snapshot=2476388352
+                Reduce input groups=402579
+                Reduce input records=31863388
+                Reduce output records=402579
+                Reduce shuffle bytes=130983248
+                Shuffled Maps =3
+                Spilled Records=95590164
+                Total committed heap usage (bytes)=2362966016
+                Virtual memory (bytes) snapshot=23918067712
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Running step 6 of 9...
+  packageJobJar: [/tmp/hadoop-unjar6552420776942416720/] [] /tmp/streamjob5908131412176254315.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0006
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  Adding a new node: /default-rack/172.18.0.4:9866
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:3
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0006
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0006
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0006/
+  Running job: job_1715007770813_0006
+  Job job_1715007770813_0006 running in uber mode : false
+   map 0% reduce 0%
+   map 4% reduce 0%
+   map 14% reduce 0%
+   map 16% reduce 0%
+   map 20% reduce 0%
+   map 22% reduce 0%
+   map 27% reduce 0%
+   map 29% reduce 0%
+   map 33% reduce 0%
+   map 35% reduce 0%
+   map 40% reduce 0%
+   map 42% reduce 0%
+   map 46% reduce 0%
+   map 50% reduce 0%
+   map 52% reduce 0%
+   map 57% reduce 0%
+   map 59% reduce 0%
+   map 63% reduce 0%
+   map 65% reduce 0%
+   map 66% reduce 0%
+   map 78% reduce 0%
+   map 89% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 44%
+   map 100% reduce 53%
+   map 100% reduce 62%
+   map 100% reduce 67%
+   map 100% reduce 69%
+   map 100% reduce 71%
+   map 100% reduce 73%
+   map 100% reduce 75%
+   map 100% reduce 77%
+   map 100% reduce 79%
+   map 100% reduce 81%
+   map 100% reduce 83%
+   map 100% reduce 85%
+   map 100% reduce 86%
+   map 100% reduce 88%
+   map 100% reduce 90%
+   map 100% reduce 92%
+   map 100% reduce 94%
+   map 100% reduce 96%
+   map 100% reduce 98%
+   map 100% reduce 99%
+   map 100% reduce 100%
+  Job job_1715007770813_0006 completed successfully
+  Output directory: hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/step-output/0005
+Counters: 54
+        File Input Format Counters
+                Bytes Read=411577853
+        File Output Format Counters
+                Bytes Written=411194729
+        File System Counters
+                FILE: Number of bytes read=269674722
+                FILE: Number of bytes written=400919781
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=411578366
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=411194729
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=14
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=3
+                Launched reduce tasks=1
+                Rack-local map tasks=3
+                Total megabyte-milliseconds taken by all map tasks=913911808
+                Total megabyte-milliseconds taken by all reduce tasks=1108426752
+                Total time spent by all map tasks (ms)=223123
+                Total time spent by all maps in occupied slots (ms)=892492
+                Total time spent by all reduce tasks (ms)=135306
+                Total time spent by all reduces in occupied slots (ms)=1082448
+                Total vcore-milliseconds taken by all map tasks=223123
+                Total vcore-milliseconds taken by all reduce tasks=135306
+        Map-Reduce Framework
+                CPU time spent (ms)=417640
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=156
+                Input split bytes=513
+                Map input records=402579
+                Map output bytes=859307257
+                Map output materialized bytes=130309282
+                Map output records=31863388
+                Merged Map outputs=3
+                Peak Map Physical memory (bytes)=395022336
+                Peak Map Virtual memory (bytes)=5207519232
+                Peak Reduce Physical memory (bytes)=1308602368
+                Peak Reduce Virtual memory (bytes)=8559374336
+                Physical memory (bytes) snapshot=2415185920
+                Reduce input groups=402579
+                Reduce input records=31863388
+                Reduce output records=402579
+                Reduce shuffle bytes=130309282
+                Shuffled Maps =3
+                Spilled Records=95590164
+                Total committed heap usage (bytes)=2296905728
+                Virtual memory (bytes) snapshot=23913799680
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Running step 7 of 9...
+  packageJobJar: [/tmp/hadoop-unjar5539011560103812220/] [] /tmp/streamjob5449954061929442446.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0007
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  Adding a new node: /default-rack/172.18.0.4:9866
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:3
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0007
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0007
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0007/
+  Running job: job_1715007770813_0007
+  Job job_1715007770813_0007 running in uber mode : false
+   map 0% reduce 0%
+   map 4% reduce 0%
+   map 9% reduce 0%
+   map 14% reduce 0%
+   map 16% reduce 0%
+   map 18% reduce 0%
+   map 20% reduce 0%
+   map 22% reduce 0%
+   map 25% reduce 0%
+   map 27% reduce 0%
+   map 29% reduce 0%
+   map 31% reduce 0%
+   map 33% reduce 0%
+   map 35% reduce 0%
+   map 38% reduce 0%
+   map 40% reduce 0%
+   map 42% reduce 0%
+   map 44% reduce 0%
+   map 47% reduce 0%
+   map 49% reduce 0%
+   map 51% reduce 0%
+   map 53% reduce 0%
+   map 55% reduce 0%
+   map 58% reduce 0%
+   map 60% reduce 0%
+   map 62% reduce 0%
+   map 67% reduce 0%
+   map 69% reduce 0%
+   map 71% reduce 0%
+   map 78% reduce 0%
+   map 89% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 48%
+   map 100% reduce 57%
+   map 100% reduce 66%
+   map 100% reduce 68%
+   map 100% reduce 70%
+   map 100% reduce 72%
+   map 100% reduce 74%
+   map 100% reduce 76%
+   map 100% reduce 78%
+   map 100% reduce 80%
+   map 100% reduce 82%
+   map 100% reduce 84%
+   map 100% reduce 86%
+   map 100% reduce 88%
+   map 100% reduce 89%
+   map 100% reduce 91%
+   map 100% reduce 93%
+   map 100% reduce 95%
+   map 100% reduce 97%
+   map 100% reduce 99%
+   map 100% reduce 100%
+  Job job_1715007770813_0007 completed successfully
+  Output directory: hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/step-output/0006
+Counters: 54
+        File Input Format Counters
+                Bytes Read=411211113
+        File Output Format Counters
+                Bytes Written=411177905
+        File System Counters
+                FILE: Number of bytes read=265815856
+                FILE: Number of bytes written=395296772
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=411211626
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=411177905
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=14
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=3
+                Launched reduce tasks=1
+                Rack-local map tasks=3
+                Total megabyte-milliseconds taken by all map tasks=896724992
+                Total megabyte-milliseconds taken by all reduce tasks=1077919744
+                Total time spent by all map tasks (ms)=218927
+                Total time spent by all maps in occupied slots (ms)=875708
+                Total time spent by all reduce tasks (ms)=131582
+                Total time spent by all reduces in occupied slots (ms)=1052656
+                Total vcore-milliseconds taken by all map tasks=218927
+                Total vcore-milliseconds taken by all reduce tasks=131582
+        Map-Reduce Framework
+                CPU time spent (ms)=411360
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=160
+                Input split bytes=513
+                Map input records=402579
+                Map output bytes=850869881
+                Map output materialized bytes=128545139
+                Map output records=31863388
+                Merged Map outputs=3
+                Peak Map Physical memory (bytes)=393445376
+                Peak Map Virtual memory (bytes)=5209690112
+                Peak Reduce Physical memory (bytes)=1294929920
+                Peak Reduce Virtual memory (bytes)=8569585664
+                Physical memory (bytes) snapshot=2395459584
+                Reduce input groups=402579
+                Reduce input records=31863388
+                Reduce output records=402579
+                Reduce shuffle bytes=128545139
+                Shuffled Maps =3
+                Spilled Records=95590164
+                Total committed heap usage (bytes)=2307915776
+                Virtual memory (bytes) snapshot=23927963648
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Running step 8 of 9...
+  packageJobJar: [/tmp/hadoop-unjar4629723320761949277/] [] /tmp/streamjob8606068896024091140.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0008
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  Adding a new node: /default-rack/172.18.0.4:9866
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:3
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0008
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0008
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0008/
+  Running job: job_1715007770813_0008
+  Job job_1715007770813_0008 running in uber mode : false
+   map 0% reduce 0%
+   map 4% reduce 0%
+   map 9% reduce 0%
+   map 14% reduce 0%
+   map 16% reduce 0%
+   map 18% reduce 0%
+   map 20% reduce 0%
+   map 22% reduce 0%
+   map 25% reduce 0%
+   map 27% reduce 0%
+   map 29% reduce 0%
+   map 31% reduce 0%
+   map 33% reduce 0%
+   map 36% reduce 0%
+   map 38% reduce 0%
+   map 40% reduce 0%
+   map 42% reduce 0%
+   map 45% reduce 0%
+   map 47% reduce 0%
+   map 49% reduce 0%
+   map 51% reduce 0%
+   map 53% reduce 0%
+   map 55% reduce 0%
+   map 58% reduce 0%
+   map 60% reduce 0%
+   map 62% reduce 0%
+   map 71% reduce 0%
+   map 73% reduce 0%
+   map 76% reduce 0%
+   map 80% reduce 0%
+   map 91% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 47%
+   map 100% reduce 56%
+   map 100% reduce 65%
+   map 100% reduce 68%
+   map 100% reduce 70%
+   map 100% reduce 72%
+   map 100% reduce 74%
+   map 100% reduce 76%
+   map 100% reduce 78%
+   map 100% reduce 80%
+   map 100% reduce 82%
+   map 100% reduce 84%
+   map 100% reduce 86%
+   map 100% reduce 88%
+   map 100% reduce 90%
+   map 100% reduce 92%
+   map 100% reduce 94%
+   map 100% reduce 96%
+   map 100% reduce 98%
+   map 100% reduce 99%
+   map 100% reduce 100%
+  Job job_1715007770813_0008 completed successfully
+  Output directory: hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906/step-output/0007
+Counters: 54
+        File Input Format Counters
+                Bytes Read=411186097
+        File Output Format Counters
+                Bytes Written=411177029
+        File System Counters
+                FILE: Number of bytes read=265656000
+                FILE: Number of bytes written=395061530
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=411186610
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=411177029
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=14
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=3
+                Launched reduce tasks=1
+                Rack-local map tasks=3
+                Total megabyte-milliseconds taken by all map tasks=889565184
+                Total megabyte-milliseconds taken by all reduce tasks=1064558592
+                Total time spent by all map tasks (ms)=217179
+                Total time spent by all maps in occupied slots (ms)=868716
+                Total time spent by all reduce tasks (ms)=129951
+                Total time spent by all reduces in occupied slots (ms)=1039608
+                Total vcore-milliseconds taken by all map tasks=217179
+                Total vcore-milliseconds taken by all reduce tasks=129951
+        Map-Reduce Framework
+                CPU time spent (ms)=405310
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=142
+                Input split bytes=513
+                Map input records=402579
+                Map output bytes=850627961
+                Map output materialized bytes=128469753
+                Map output records=31863388
+                Merged Map outputs=3
+                Peak Map Physical memory (bytes)=393535488
+                Peak Map Virtual memory (bytes)=5207425024
+                Peak Reduce Physical memory (bytes)=1288433664
+                Peak Reduce Virtual memory (bytes)=8563195904
+                Physical memory (bytes) snapshot=2389372928
+                Reduce input groups=402579
+                Reduce input records=31863388
+                Reduce output records=402579
+                Reduce shuffle bytes=128469753
+                Shuffled Maps =3
+                Spilled Records=95590164
+                Total committed heap usage (bytes)=2292711424
+                Virtual memory (bytes) snapshot=23916531712
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+Running step 9 of 9...
+  packageJobJar: [/tmp/hadoop-unjar680156462880112494/] [] /tmp/streamjob1227197627441228415.jar tmpDir=null
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Connecting to ResourceManager at resourcemanager/172.18.0.5:8032
+  Connecting to Application History server at historyserver/172.18.0.2:10200
+  Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1715007770813_0009
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Total input files to process : 1
+  Adding a new node: /default-rack/172.18.0.4:9866
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  number of splits:3
+  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+  Submitting tokens for job: job_1715007770813_0009
+  Executing with tokens: []
+  resource-types.xml not found
+  Unable to find 'resource-types.xml'.
+  Submitted application application_1715007770813_0009
+  The url to track the job: http://resourcemanager:8088/proxy/application_1715007770813_0009/
+  Running job: job_1715007770813_0009
+  Job job_1715007770813_0009 running in uber mode : false
+   map 0% reduce 0%
+   map 33% reduce 0%
+   map 100% reduce 0%
+   map 100% reduce 100%
+  Job job_1715007770813_0009 completed successfully
+  Output directory: hdfs:///output
+Counters: 54
+        File Input Format Counters
+                Bytes Read=411185221
+        File Output Format Counters
+                Bytes Written=6469365
+        File System Counters
+                FILE: Number of bytes read=1173652
+                FILE: Number of bytes written=3282314
+                FILE: Number of large read operations=0
+                FILE: Number of read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=411185734
+                HDFS: Number of bytes read erasure-coded=0
+                HDFS: Number of bytes written=6469365
+                HDFS: Number of large read operations=0
+                HDFS: Number of read operations=14
+                HDFS: Number of write operations=2
+        Job Counters
+                Launched map tasks=3
+                Launched reduce tasks=1
+                Rack-local map tasks=3
+                Total megabyte-milliseconds taken by all map tasks=54177792
+                Total megabyte-milliseconds taken by all reduce tasks=51372032
+                Total time spent by all map tasks (ms)=13227
+                Total time spent by all maps in occupied slots (ms)=52908
+                Total time spent by all reduce tasks (ms)=6271
+                Total time spent by all reduces in occupied slots (ms)=50168
+                Total vcore-milliseconds taken by all map tasks=13227
+                Total vcore-milliseconds taken by all reduce tasks=6271
+        Map-Reduce Framework
+                CPU time spent (ms)=6890
+                Combine input records=0
+                Combine output records=0
+                Failed Shuffles=0
+                GC time elapsed (ms)=128
+                Input split bytes=513
+                Map input records=402579
+                Map output bytes=5664207
+                Map output materialized bytes=1173209
+                Map output records=402579
+                Merged Map outputs=3
+                Peak Map Physical memory (bytes)=372899840
+                Peak Map Virtual memory (bytes)=5140910080
+                Peak Reduce Physical memory (bytes)=275394560
+                Peak Reduce Virtual memory (bytes)=8487628800
+                Physical memory (bytes) snapshot=1386790912
+                Reduce input groups=402579
+                Reduce input records=402579
+                Reduce output records=402579
+                Reduce shuffle bytes=1173209
+                Shuffled Maps =3
+                Spilled Records=805158
+                Total committed heap usage (bytes)=1250951168
+                Virtual memory (bytes) snapshot=23902322688
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+job output is in hdfs:///output
+Removing HDFS temp directory hdfs:///user/root/tmp/mrjob/parallel_bfs_mapreduce.root.20240506.150409.926906...
+Removing temp directory /tmp/parallel_bfs_mapreduce.root.20240506.150409.926906...
+Process completed.
+2024-05-06 15:31:44,450 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+Successfully copied 6.47MB to /mnt/c/Users/hoore/Documents/ULiege/Q2/TDS/2.Assignments/A2/bacon-number-mapreduce-spark/workdir/outputs/mapreduce-bacon_number.txt
+Resulting file available in the /outputs folder.
