@@ -12,3 +12,9 @@ This repository uses the following GitHub repository as base: [docker-hadoop-spa
 Refer to the [report](workdir/TDS___Hadoop___Spark.pdf).
 
 Or to the short [YoutTube video](https://www.youtube.com/watch?v=zyVwqFZ-LD0) demonstration.
+
+## Authors
+- [docker-hadoop-spark](https://github.com/chrdebru/docker-hadoop-spark) repository authors
+- Aly Abdelaleem
+- Loïc Meunier
+- Jordi Hoorelbeke
